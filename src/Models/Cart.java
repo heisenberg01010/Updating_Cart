@@ -87,7 +87,8 @@ public class Cart {
         String k = product.name;
         int qty = totalVariantsQtyMap.get(k) + 1;
         totalVariantsQtyMap.put(k, qty);
-
+        
+        //return map.getOrDefault(key, ).qty;
         return map.containsKey(key) ? (int) map.get(key).qty : 0;
     }
 
